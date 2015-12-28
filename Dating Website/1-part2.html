@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Welcome to our dating website</title>
+  <style>
+  fieldset {
+    background: lightyellow;
+    border: 10px solid yellow;
+    margin-bottom:10px;
+    width:720px;
+  }
+
+  label:not(.radioandcheckbox) {
+    width:180px;
+    display:inline-block;
+    text-align: right;
+    text-align: top;
+    padding-right: 5px;
+    margin-top: 5px;
+  }
+
+  span {
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+    color:white;
+    width:50px;
+    height:20px;
+  }
+
+  span.high {
+    background:purple;
+  }
+
+  span.low {
+    background:brown;
+  }
+
+  .radioandcheckbox {
+    width:auto;
+  }
+
+  #Height #Salary {
+    text-align:center
+  }
+
+  input, textarea {
+    margin-top: 5px;
+    background: none;
+  }
+
+  textarea {
+    width:360px;
+    height:50px;
+  }
+
+  #country {
+    margin-top: 5px;
+  }
+
+  </style>
+</head>
+<body>
+  <h1><strong>Please Enter Your Details For Our Dating Website!</strong></h1>
+  <form action="destination" method="post" enctype="multipart/form-data" action="https://...">
+    <fieldset>
+      <legend>Your Face</legend>
+        <label for="avatar">Your image: </label>
+        <input type="file" name="avatar" id="avatar" accept="image/*" required><br>
+        <label for="preview">Image preview: </label>
+        <img id="preview">
+    </fieldset><br>
+    <fieldset>
+      <legend>Your General Details</legend>
+      <label for="Name">Name: </label>
+        <input type="text" name="Name" id="Name" placeholder="Your full name" required><br>
+        <label for="Male">Gender:</label>
+        <input type="radio" name="Gender" id="Male" value="Female" required></input>
+        <label for="Male" class="radioandcheckbox">Male</label>
+        <input type="radio" name="Gender" id="Female" value="Male" required></input>
+        <label for="Female" class="radioandcheckbox">Female</label><br>
+        <label for="Age">Age: </label>
+        <input type="number" name="Age" id="Age" required><br>
+        <label for="Birthday">Date of birth: </label>
+        <input type="date" name="Date of birth" id="Birthday" required><br>
+        <label for="Color">Favorite Color: </label>
+        <input type="color" name="Favorite Color" id="Color"><br>
+        <label for="Country">Which country:</label>
+        <select name="Country" id="Country">
+          <option value="No Selection" selected>No Selection</option>
+          <option value="China">China</option>
+          <option value="USA">USA</option>
+          <option value="England">England</option>
+          <option value="Australia">Australia</option>
+          <option value="Singapore">Singapore</option>
+        </select>
+        <br>
+    </fieldset><br>
+    <fieldset>
+      <legend>Your Indicators</legend>
+      <label for="Height">Height:</label>
+      <span class="low">Short</span><input type="range" min="0" max="100" value="50" name="Height" class="range" id="Height"><span class="high">Tall</span><br>
+      <label for="Salary">Salary:</label>
+      <span class="low">Poor</span><input type="range" min="0" max="100" value="50" name="Salary" class="range" id="Salary"><span class="high">Rich</span><br>
+    </fieldset><br>
+    <fieldset>
+      <legend>Your Contact Information</legend>
+      <label for="Email">Email: </label>
+      <input type="email" name="Email" id="Email" required><br>
+      <label for="Mobile">Mobile: </label>
+      <input type="tel" name="Mobile" id="Mobile"><br>
+      <label for="Address">Address: </label>
+      <textarea name="Address" id="Address"></textarea><br>
+      <label for="email">Method to contact you:</label>
+        <input type="checkbox" name="Contact" id="email" value="Email"></input>
+        <label for="email" class="radioandcheckbox">Email</label>
+        <input type="checkbox" name="Contact" id="Whatsapp" value="Whatsapp"></input>
+        <label for="Whatsapp" class="radioandcheckbox">Whatsapp</label>
+        <input type="checkbox" name="Contact" id="In-app-chat" value="In-app chat"></input>
+        <label for="In-app-chat" class="radioandcheckbox">In-app chat</label><br>
+    </fieldset><br>
+    <input type="submit" id="Submit" name="Submit" value = "Submit">
+  </form>
+</body>
+</html>
