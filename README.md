@@ -1,5 +1,6 @@
 # WebDev
 Projects built for the Coursera course HTML, CSS and Javascript
+
 By making a web page for a hypothetical startup dating company, I gained experience in HTML and CSS:
 https://s3.amazonaws.com/coursera-uploads/peer-review/LgWwihnoEeWDtQoum3sFeQ/c646cbf997e83eda8660a090f891824b/part3.html
 
